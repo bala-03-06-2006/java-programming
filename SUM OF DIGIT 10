@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class SumOfDigits {
+    public static void main(String[] args) {
+        Scanner digits = new Scanner(System.in);
+        int number = digits.nextInt();
+        if (number >= 100) {
+            int sum = 0;
+            for (; number != 0; number /= 10) {
+                sum += number % 10;
+            }
+            System.out.println("Sum of digit is " + sum);
+        } else {
+            System.out.println("Invalid Input");
+        }
+    }
+}
+
