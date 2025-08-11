@@ -1,0 +1,19 @@
+import java.util.*;
+public class ArmstrongNumber {
+    public static void main(String[] args) {
+        Scanner arm = new Scanner(System.in);
+        int m = arm.nextInt();
+        int n = m;
+        int s = 0;
+        while (m > 0) {
+            int d = m%10;
+            s+= d*d *d;
+            m=m/10;
+        }
+        if (s == n) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
