@@ -1,0 +1,24 @@
+import java.util.*;
+public class Swap {
+    public static void main(String[] args) {
+        Scanner dc=new Scanner(System.in);
+        int a=dc.nextInt();
+        if(a>=10 && a<=99)
+        {
+            int fd=a/10;
+            int sd=a%10;
+            int sn=(sd*10)+fd;
+            System.out.print(sn);
+        }
+        else if (a > 99) { 
+                String numStr = String.valueOf(a); 
+                char fd = numStr.charAt(0); 
+                char sd = numStr.charAt(1); 
+                String sn = String.valueOf(sd)+fd; 
+                System.out.println(sn); 
+            } 
+        else {
+            System.out.println("STDOUT");
+        }
+    }
+}
