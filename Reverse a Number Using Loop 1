@@ -1,0 +1,19 @@
+import java.util.*;
+public class Reversing {
+    public static void main(String[] args) {
+        Scanner mc = new Scanner(System.in);
+        int n= mc.nextInt();
+        if (n<0) {
+            System.out.println("Invalid Input");
+        } else {
+            int r= 0;
+            int o= n;
+            while (n>0) {
+                int d =n% 10;
+                r= r*10+d;
+                n=n/10;
+            }
+            System.out.println(r);
+        }
+    }
+}
